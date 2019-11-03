@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Insurance Plan Comparison</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.3.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="ac131068-176e-4131-b74c-bc2cfb89050a" data-root-id="3169"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3260">
+          {"0be29945-79ad-4dc7-885f-8e5bbb38635e":{"roots":{"references":[{"attributes":{"dimension":1,"ticker":{"id":"3133","type":"BasicTicker"}},"id":"3136","type":"Grid"},{"attributes":{"callback":null,"data":{"x":{"__ndarray__":"AAAAAAAAAACWArV+pUBZQJYCtX6lQGlA8MEHH3zwckCWArV+pUB5QDxDYt7OkH9A8MEHH3zwgkBDYt7OkBiGQJYCtX6lQIlA6aKLLrpojEA8Q2LezpCPQMdxHMdxXJFA8MEHH3zwkkAaEvN2hoSUQENi3s6QGJZAbbLJJpusl0CWArV+pUCZQL9SoNav1JpA6aKLLrponEAS83aGxPydQDxDYt7OkJ9Asskmm2ySoEDHcRzHcVyhQNwZEvN2JqJA8MEHH3zwokAFav1KgbqjQBoS83aGhKRAL7roootOpUBDYt7OkBimQFgK1PqV4qZAbbLJJpusp0CBWr9SoHaoQJYCtX6lQKlAq6qqqqoKqkC/UqDWr9SqQNT6lQK1nqtA6aKLLrporED9SoFavzKtQBLzdobE/K1AJ5tsssnGrkA8Q2LezpCvQKj1KwVqLbBAsskmm2ySsEC9nSExb/ewQMdxHMdxXLFA0UUXXXTBsUDcGRLzdiayQObtDIl5i7JA8MEHH3zwskD7lQK1flWzQAVq/UqBurNAED744IMftEAaEvN2hoS0QCTm7QyJ6bRAL7roootOtUA5juM4jrO1QENi3s6QGLZATjbZZJN9tkBYCtT6leK2QGLezpCYR7dAbbLJJpust0B3hsS8nRG4QIFav1KgdrhAjC666KLbuECWArV+pUC5QKDWrxSopblAq6qqqqoKukC1fqVArW+6QL9SoNav1LpAyiabbLI5u0DU+pUCtZ67QN7OkJi3A7xA6aKLLrpovEDzdobEvM28QP1KgVq/Mr1ACB988MGXvUAS83aGxPy9QBzHcRzHYb5AJ5tsssnGvkAxb2dIzCu/QDxDYt7OkL9ARhdddNH1v0Co9SsFai3AQK1fKVDrX8BAsskmm2ySwEC4MyTm7cTAQL2dITFv98BAwgcffPApwUDHcRzHcVzBQMzbGRLzjsFA0UUXXXTBwUDXrxSo9fPBQNwZEvN2JsJA4YMPPvhYwkDm7QyJeYvCQOtXCtT6vcJA8MEHH3zwwkD2KwVq/SLDQPuVArV+VcNAAAAAAACIw0A=","dtype":"float64","shape":[100]},"y":{"__ndarray__":"AAAAAAAAAACWArV+pUBZQJYCtX6lQGlA8MEHH3zwckCWArV+pUB5QDxDYt7OkH9A8MEHH3zwgkBDYt7OkBiGQJYCtX6lQIlA6aKLLrpojEA8Q2LezpCPQMdxHMdxXJFA8MEHH3zwkkAaEvN2hoSUQENi3s6QGJZAbbLJJpusl0CWArV+pUCZQL9SoNav1JpA6aKLLrponEAS83aGxPydQDxDYt7OkJ9Asskmm2ySoEDHcRzHcVyhQNwZEvN2JqJA8MEHH3zwokAFav1KgbqjQBoS83aGhKRAL7roootOpUBDYt7OkBimQFgK1PqV4qZAbbLJJpusp0CBWr9SoHaoQJYCtX6lQKlAq6qqqqoKqkC/UqDWr9SqQNT6lQK1nqtA6aKLLrporED9SoFavzKtQBLzdobE/K1AJ5tsssnGrkA8Q2LezpCvQKj1KwVqLbBAsskmm2ySsEC9nSExb/ewQMdxHMdxXLFA0UUXXXTBsUDcGRLzdiayQObtDIl5i7JA8MEHH3zwskD7lQK1flWzQAVq/UqBurNAED744IMftEAaEvN2hoS0QCTm7QyJ6bRAL7roootOtUA5juM4jrO1QENi3s6QGLZATjbZZJN9tkBYCtT6leK2QGLezpCYR7dAbbLJJpust0B3hsS8nRG4QIFav1KgdrhAjC666KLbuECWArV+pUC5QKDWrxSopblAq6qqqqoKukC1fqVArW+6QL9SoNav1LpAyiabbLI5u0DU+pUCtZ67QN7OkJi3A7xA6aKLLrpovEDzdobEvM28QP1KgVq/Mr1ACB988MGXvUAS83aGxPy9QBzHcRzHYb5AJ5tsssnGvkAxb2dIzCu/QDxDYt7OkL9ARhdddNH1v0Co9SsFai3AQK1fKVDrX8BAsskmm2ySwEC4MyTm7cTAQL2dITFv98BAwgcffPApwUDHcRzHcVzBQMzbGRLzjsFA0UUXXXTBwUDXrxSo9fPBQNwZEvN2JsJA4YMPPvhYwkDm7QyJeYvCQOtXCtT6vcJA8MEHH3zwwkD2KwVq/SLDQPuVArV+VcNAAAAAAACIw0A=","dtype":"float64","shape":[100]}},"selected":{"id":"3164","type":"Selection"},"selection_policy":{"id":"3163","type":"UnionRenderers"}},"id":"3146","type":"ColumnDataSource"},{"attributes":{"axis_label":"Actual Incurred Cost","formatter":{"id":"3159","type":"BasicTickFormatter"},"ticker":{"id":"3133","type":"BasicTicker"}},"id":"3132","type":"LinearAxis"},{"attributes":{"callback":null,"end":1000,"js_property_callbacks":{"change:value":[{"id":"3167","type":"CustomJS"}]},"start":0,"step":10,"title":"Company Contribution","value":50},"id":"3114","type":"Slider"},{"attributes":{"callback":null,"data":{"x":{"__ndarray__":"AAAAAAAAAACWArV+pUBZQJYCtX6lQGlA8MEHH3zwckCWArV+pUB5QDxDYt7OkH9A8MEHH3zwgkBDYt7OkBiGQJYCtX6lQIlA6aKLLrpojEA8Q2LezpCPQMdxHMdxXJFA8MEHH3zwkkAaEvN2hoSUQENi3s6QGJZAbbLJJpusl0CWArV+pUCZQL9SoNav1JpA6aKLLrponEAS83aGxPydQDxDYt7OkJ9Asskmm2ySoEDHcRzHcVyhQNwZEvN2JqJA8MEHH3zwokAFav1KgbqjQBoS83aGhKRAL7roootOpUBDYt7OkBimQFgK1PqV4qZAbbLJJpusp0CBWr9SoHaoQJYCtX6lQKlAq6qqqqoKqkC/UqDWr9SqQNT6lQK1nqtA6aKLLrporED9SoFavzKtQBLzdobE/K1AJ5tsssnGrkA8Q2LezpCvQKj1KwVqLbBAsskmm2ySsEC9nSExb/ewQMdxHMdxXLFA0UUXXXTBsUDcGRLzdiayQObtDIl5i7JA8MEHH3zwskD7lQK1flWzQAVq/UqBurNAED744IMftEAaEvN2hoS0QCTm7QyJ6bRAL7roootOtUA5juM4jrO1QENi3s6QGLZATjbZZJN9tkBYCtT6leK2QGLezpCYR7dAbbLJJpust0B3hsS8nRG4QIFav1KgdrhAjC666KLbuECWArV+pUC5QKDWrxSopblAq6qqqqoKukC1fqVArW+6QL9SoNav1LpAyiabbLI5u0DU+pUCtZ67QN7OkJi3A7xA6aKLLrpovEDzdobEvM28QP1KgVq/Mr1ACB988MGXvUAS83aGxPy9QBzHcRzHYb5AJ5tsssnGvkAxb2dIzCu/QDxDYt7OkL9ARhdddNH1v0Co9SsFai3AQK1fKVDrX8BAsskmm2ySwEC4MyTm7cTAQL2dITFv98BAwgcffPApwUDHcRzHcVzBQMzbGRLzjsFA0UUXXXTBwUDXrxSo9fPBQNwZEvN2JsJA4YMPPvhYwkDm7QyJeYvCQOtXCtT6vcJA8MEHH3zwwkD2KwVq/SLDQPuVArV+VcNAAAAAAACIw0A=","dtype":"float64","shape":[100]},"y":{"__ndarray__":"AAAAAAAASUBLgVq/UuBiQJYCtX6lgG9A8MEHH3wQdkCWArV+pWB8QJ4hMW9nWIFA8MEHH3yAhEBDYt7OkKiHQJYCtX6l0IpA6aKLLrr4jUCeITFvZ5CQQMdxHMdxJJJA8MEHH3y4k0AaEvN2hkyVQENi3s6Q4JZAbbLJJpt0mECWArV+pQiaQL9SoNavnJtA6aKLLrownUAS83aGxMSeQM+QmLczGKBA2WSTTTZ9oEDkOI7jOOKgQO4MiXk7R6FA+OCDDz6soUACtX6lQBGiQA2JeTtDdqJAGF100UXbokAiMW9nSECjQCwFav1KpaNANtlkk00KpEBArV8pUG+kQEuBWr9S1KRAVlVVVVU5pUBgKVDrV56lQGr9SoFaA6ZAdNFFF11opkB+pUCtX82mQIl5O0NiMqdAlE022WSXp0CeITFvZ/ynQKj1KwVqYahAsskmm2zGqEC9nSExbyupQMdxHMdxkKlA0UUXXXT1qUDcGRLzdlqqQObtDIl5v6pA8MEHH3wkq0D7lQK1fomrQAVq/UqB7qtAED744INTrEAaEvN2hrisQCTm7QyJHa1AL7rooouCrUA5juM4juetQENi3s6QTK5ATjbZZJOxrkBYCtT6lRavQGLezpCYe69AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0AAAAAAAKSvQAAAAAAApK9AAAAAAACkr0A=","dtype":"float64","shape":[100]}},"selected":{"id":"3179","type":"Selection"},"selection_policy":{"id":"3178","type":"UnionRenderers"}},"id":"3151","type":"ColumnDataSource"},{"attributes":{},"id":"3125","type":"LinearScale"},{"attributes":{"below":[{"id":"3127","type":"LinearAxis"}],"center":[{"id":"3131","type":"Grid"},{"id":"3136","type":"Grid"},{"id":"3165","type":"Legend"}],"left":[{"id":"3132","type":"LinearAxis"}],"plot_height":400,"plot_width":400,"renderers":[{"id":"3149","type":"GlyphRenderer"},{"id":"3155","type":"GlyphRenderer"}],"title":{"id":"3158","type":"Title"},"toolbar":{"id":"3141","type":"Toolbar"},"x_range":{"id":"3119","type":"Range1d"},"x_scale":{"id":"3123","type":"LinearScale"},"y_range":{"id":"3121","type":"Range1d"},"y_scale":{"id":"3125","type":"LinearScale"}},"id":"3118","subtype":"Figure","type":"Plot"},{"attributes":{"items":[{"id":"3166","type":"LegendItem"}]},"id":"3165","type":"Legend"},{"attributes":{"callback":null,"end":8000,"js_property_callbacks":{"change:value":[{"id":"3167","type":"CustomJS"}]},"start":0,"step":10,"title":"Maximum Out Of Pocket","value":4000},"id":"3117","type":"Slider"},{"attributes":{},"id":"3128","type":"BasicTicker"},{"attributes":{"data_source":{"id":"3151","type":"ColumnDataSource"},"glyph":{"id":"3153","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3154","type":"Line"},"selection_glyph":null,"view":{"id":"3156","type":"CDSView"}},"id":"3155","type":"GlyphRenderer"},{"attributes":{"children":[{"id":"3113","type":"Slider"},{"id":"3114","type":"Slider"},{"id":"3115","type":"Slider"},{"id":"3116","type":"Slider"},{"id":"3117","type":"Slider"}]},"id":"3168","type":"Column"},{"attributes":{},"id":"3137","type":"PanTool"},{"attributes":{"text":""},"id":"3158","type":"Title"},{"attributes":{},"id":"3163","type":"UnionRenderers"},{"attributes":{},"id":"3123","type":"LinearScale"},{"attributes":{"callback":null,"end":1,"js_property_callbacks":{"change:value":[{"id":"3167","type":"CustomJS"}]},"start":0,"step":0.01,"title":"Coinsurance Rate (paid by you)","value":0.5},"id":"3116","type":"Slider"},{"attributes":{"callback":null,"end":10000},"id":"3119","type":"Range1d"},{"attributes":{},"id":"3164","type":"Selection"},{"attributes":{"label":{"value":"Plan 1"},"renderers":[{"id":"3155","type":"GlyphRenderer"}]},"id":"3166","type":"LegendItem"},{"attributes":{},"id":"3140","type":"ResetTool"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_dash":[4,4],"x":{"field":"x"},"y":{"field":"y"}},"id":"3148","type":"Line"},{"attributes":{},"id":"3133","type":"BasicTicker"},{"attributes":{"source":{"id":"3146","type":"ColumnDataSource"}},"id":"3150","type":"CDSView"},{"attributes":{"callback":null,"end":6000,"js_property_callbacks":{"change:value":[{"id":"3167","type":"CustomJS"}]},"start":0,"step":10,"title":"Deductible","value":2000},"id":"3115","type":"Slider"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"3154","type":"Line"},{"attributes":{"line_alpha":0.6,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"3153","type":"Line"},{"attributes":{},"id":"3178","type":"UnionRenderers"},{"attributes":{"callback":null,"end":10000},"id":"3121","type":"Range1d"},{"attributes":{},"id":"3139","type":"CrosshairTool"},{"attributes":{"line_dash":[4,4],"x":{"field":"x"},"y":{"field":"y"}},"id":"3147","type":"Line"},{"attributes":{"callback":null,"end":2000,"js_property_callbacks":{"change:value":[{"id":"3167","type":"CustomJS"}]},"start":0,"step":0.1,"title":"Premium","value":100},"id":"3113","type":"Slider"},{"attributes":{"ticker":{"id":"3128","type":"BasicTicker"}},"id":"3131","type":"Grid"},{"attributes":{"callback":null},"id":"3138","type":"HoverTool"},{"attributes":{},"id":"3159","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"3146","type":"ColumnDataSource"},"glyph":{"id":"3147","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3148","type":"Line"},"selection_glyph":null,"view":{"id":"3150","type":"CDSView"}},"id":"3149","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"3137","type":"PanTool"},{"id":"3138","type":"HoverTool"},{"id":"3139","type":"CrosshairTool"},{"id":"3140","type":"ResetTool"}]},"id":"3141","type":"Toolbar"},{"attributes":{"source":{"id":"3151","type":"ColumnDataSource"}},"id":"3156","type":"CDSView"},{"attributes":{"axis_label":"Out-of-Pocket Expenses","formatter":{"id":"3161","type":"BasicTickFormatter"},"ticker":{"id":"3128","type":"BasicTicker"}},"id":"3127","type":"LinearAxis"},{"attributes":{},"id":"3161","type":"BasicTickFormatter"},{"attributes":{},"id":"3179","type":"Selection"},{"attributes":{"args":{"coinsuranceRate":{"id":"3116","type":"Slider"},"contribution":{"id":"3114","type":"Slider"},"deductible":{"id":"3115","type":"Slider"},"maxOutOfPocket":{"id":"3117","type":"Slider"},"premium":{"id":"3113","type":"Slider"},"source":{"id":"3151","type":"ColumnDataSource"}},"code":"\n    const data = source.data;\n    const P = premium.value - contribution.value;\n    const D = deductible.value;\n    const R = coinsuranceRate.value;\n    const M = maxOutOfPocket.value;\n    const x = data['x']\n    const y = data['y']\n    for (var i = 0; i &lt; x.length; i++) {\n        const post_deduct = (R*(x[i] - D)) + D;\n        y[i] = Math.min(Math.min(x[i],post_deduct),M) + P;\n    }\n    source.change.emit();\n"},"id":"3167","type":"CustomJS"},{"attributes":{"children":[{"id":"3118","subtype":"Figure","type":"Plot"},{"id":"3168","type":"Column"}]},"id":"3169","type":"Row"}],"root_ids":["3169"]},"title":"Bokeh Application","version":"1.3.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3260').textContent;
+                  var render_items = [{"docid":"0be29945-79ad-4dc7-885f-8e5bbb38635e","roots":{"3169":"ac131068-176e-4131-b74c-bc2cfb89050a"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
